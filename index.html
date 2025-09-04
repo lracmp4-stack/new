@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Indovinello di Lucrezia</title>
+  <title>Enigma di Lucrezia</title>
   <style>
     body {
       font-family: Poppins, sans-serif;
@@ -50,8 +50,8 @@
 </head>
 <body>
   <div class="container">
-    <h2>Indovinello di Lucrezia</h2>
-    <p><em>"Sono fragile come il vetro, eppure reggo il mondo. Chi sono?"</em></p>
+    <h2> L'enigma di Lucrezia</h2>
+    <p><em>"Regnò in terre lontane… potente, astuta, capace di sedurre e dominare con la mente e con il cuore" Chi è?</em></p>
     <input type="text" id="answer" placeholder="Scrivi la tua risposta...">
     <button onclick="checkAnswer()">Invia</button>
     <div class="message" id="message"></div>
@@ -59,13 +59,13 @@
 
   <script>
     function checkAnswer() {
-      const correctAnswer = "silenzio"; // <-- qui puoi cambiare la risposta giusta
+      const correctAnswer = "Cleopatra";
       const userAnswer = document.getElementById("answer").value.trim().toLowerCase();
       const messageDiv = document.getElementById("message");
 
       if(userAnswer === correctAnswer) {
         messageDiv.style.color = "green";
-        messageDiv.innerHTML = "Bravo! Ora vai nella Sala 5 e cerca l'opera misteriosa.";
+        messageDiv.innerHTML = "Corretto! Ora cerca Cleopatra... a pochi passi da te.";
       } else {
         messageDiv.style.color = "red";
         messageDiv.innerHTML = "Non è corretto... prova ancora!";
